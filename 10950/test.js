@@ -1,4 +1,5 @@
 let fs = require("fs");
+//                            /dev/stdin
 let input = fs.readFileSync("./test.txt").toString().split("\n");
 
 for (let i = 1; i <= input[0]; i++) {
