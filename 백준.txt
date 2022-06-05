@@ -1,1 +1,1 @@
- /dev/stdin
+/dev/stdin
