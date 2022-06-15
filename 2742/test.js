@@ -1,9 +1,8 @@
-let input = Number(require("fs").readFileSync("./test.txt").toString());
+const input = parseInt(require("fs").readFileSync("./test.txt").toString());
 
-let answer = "";
-
-for (let i = input; i >= 1; i--) {
-  answer += i + "\n";
+let output = "";
+for (let i = 1; i <= input; i++) {
+  output += " ".repeat(input - i) + "*".repeat(i * 2 - 1) + "\n";
 }
 
-console.log(answer);
+console.log(output);
